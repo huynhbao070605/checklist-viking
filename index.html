@@ -50,12 +50,11 @@
             border-color: var(--viking-blue);
             outline: none;
         }
-        /* Style cho từng dòng checklist */
         .checklist-item {
             background-color: var(--card-bg);
             margin-bottom: 12px;
             padding: 10px 20px;
-            border-radius: 60px; /* Bo tròn dài như hình mẫu */
+            border-radius: 60px;
             display: flex;
             align-items: center;
             cursor: pointer;
@@ -65,25 +64,26 @@
             transform: scale(1.02);
         }
         input[type="checkbox"] {
-            width: 30px;
-            height: 30px;
+            width: 25px;
+            height: 25px;
             margin-right: 15px;
             flex-shrink: 0;
         }
         .label-text {
             flex-grow: 1;
             font-weight: 600;
-            font-size: 15px;
+            font-size: 14px;
             color: #333;
             padding-right: 10px;
+            line-height: 1.4;
         }
-        /* Style cho hình minh họa */
         .step-img {
-            width: 100px;
-            height: 65px;
+            width: 90px;
+            height: 60px;
             object-fit: cover;
             border-radius: 8px;
             border: 2px solid white;
+            background-color: #ddd;
         }
         .btn-submit {
             width: 100%;
@@ -116,45 +116,57 @@
 
     <div id="checklist">
         <label class="checklist-item">
-            <input type="checkbox" value="May mẫu kiểm tra quy trình">
-            <span class="label-text">May mẫu kiểm tra quy trình</span>
-            <img src="1.png" class="step-img" alt="Bước 1">
+            <input type="checkbox" value="May mẫu + kiểm tra quy trình">
+            <span class="label-text">1. May mẫu + kiểm tra quy trình</span>
+            <img src="1.png" class="step-img" alt="B1">
         </label>
 
         <label class="checklist-item">
-            <input type="checkbox" value="Chuẩn bị rập giấy, mika; làm mockup, thử rập">
-            <span class="label-text">Chuẩn bị rập giấy, mika; làm mockup, thử rập</span>
-            <img src="2.png" class="step-img" alt="Bước 2">
+            <input type="checkbox" value="Lên nhu cầu chân vịt, cử gá">
+            <span class="label-text">2. Lên nhu cầu chân vịt, cử gá</span>
+            <img src="2.png" class="step-img" alt="B2">
         </label>
 
         <label class="checklist-item">
-            <input type="checkbox" value="Lên nhu cầu chân vịt, cử gá cần cho đơn hàng">
-            <span class="label-text">Lên nhu cầu chân vịt, cử gá cần cho đơn hàng</span>
-            <img src="3.png" class="step-img" alt="Bước 3">
+            <input type="checkbox" value="Chuẩn bị rập cứng + mica">
+            <span class="label-text">3. Chuẩn bị rập cứng + mica</span>
+            <img src="3.png" class="step-img" alt="B3">
         </label>
 
         <label class="checklist-item">
-            <input type="checkbox" value="Thử máy, cử gá cùng cơ điện">
-            <span class="label-text">Thử máy, cử gá cùng cơ điện</span>
-            <img src="4.png" class="step-img" alt="Bước 4">
+            <input type="checkbox" value="Làm mockup, thử rập">
+            <span class="label-text">4. Làm mockup, thử rập</span>
+            <img src="4.png" class="step-img" alt="B4">
         </label>
 
         <label class="checklist-item">
-            <input type="checkbox" value="Thử mockup các công đoạn đặc thù của sản phẩm">
-            <span class="label-text">Thử mockup các công đoạn đặc thù của sản phẩm</span>
-            <img src="5.png" class="step-img" alt="Bước 5">
+            <input type="checkbox" value="Thử máy, cử gá sau khi cơ điện chuẩn bị đạt">
+            <span class="label-text">5. Thử máy, cử gá sau khi cơ điện chuẩn bị đạt</span>
+            <img src="5.png" class="step-img" alt="B5">
         </label>
 
         <label class="checklist-item">
-            <input type="checkbox" value="Kiểm tra và đo thông số khi chuyển đổi size">
-            <span class="label-text">Kiểm tra và đo thông số khi chuyển đổi size</span>
-            <img src="6.png" class="step-img" alt="Bước 6">
+            <input type="checkbox" value="Triển khai theo tiêu chuẩn + mẫu + bảng màu + quy trình/layout">
+            <span class="label-text">6. Triển khai theo tiêu chuẩn + mẫu + bảng màu + quy trình/layout</span>
+            <img src="6.png" class="step-img" alt="B6">
+        </label>
+
+        <label class="checklist-item">
+            <input type="checkbox" value="Kiểm mẫu đầu chuyền">
+            <span class="label-text">7. Kiểm mẫu đầu chuyền</span>
+            <img src="7.png" class="step-img" alt="B7">
+        </label>
+
+        <label class="checklist-item">
+            <input type="checkbox" value="Triển khai và kiểm tra thông số khi chuyển đổi size">
+            <span class="label-text">8. Triển khai và kiểm tra thông số khi chuyển đổi size</span>
+            <img src="8.png" class="step-img" alt="B8">
         </label>
 
         <label class="checklist-item">
             <input type="checkbox" value="Họp kết thúc đơn hàng">
-            <span class="label-text">Họp kết thúc đơn hàng</span>
-            <img src="7.png" class="step-img" alt="Bước 7">
+            <span class="label-text">9. Họp kết thúc đơn hàng</span>
+            <img src="9.png" class="step-img" alt="B9">
         </label>
     </div>
 
@@ -166,8 +178,8 @@
         const orderCode = document.getElementById('orderCode').value;
         const checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
         
-        // DÁN LINK GOOGLE APP SCRIPT CỦA BẠN VÀO ĐÂY
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbz3cpfkhaW2qBiGXwc3lhGb7m-BudpNA4puF6Eza93HsWT4VZ7VqhBBaXoAt39qmFlo/exec'; 
+        // Link Google Script của bạn đã được giữ nguyên
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwDLX2QZf0Zchb9_jKWR1g-EdpgUAl3BG0Q2D9gDPySDvv3OBtL9dPdn9p0d1SVsBdD/exec'; 
 
         if (!orderCode) {
             alert("Vui lòng nhập mã đơn hàng trước khi nộp!");
@@ -182,13 +194,13 @@
         
         fetch(scriptURL, {
             method: 'POST',
-            mode: 'no-cors', // Quan trọng để tránh lỗi CORS khi test
+            mode: 'no-cors',
             cache: 'no-cache',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ orderCode: orderCode, tasks: tasks })
         })
         .then(() => {
-            alert("Nộp thành công! Dữ liệu đã được gửi về máy bạn.");
+            alert("Nộp thành công cho đơn hàng: " + orderCode);
             location.reload(); 
         })
         .catch(error => alert("Có lỗi xảy ra: " + error));
